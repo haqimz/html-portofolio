@@ -1,0 +1,99 @@
+/*membuat semua tulisan tag yang di bawah menjadi di tengah atau center*/
+h1, h2, p {
+    text-align: center;
+}
+/* untuk menambahkan gambar di background*/
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+.menu { /*untuk class name pake dot didepan nama, kalau pake id dipen nama id ada #*/
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+/*untuk mengatur lebar menu atau jarak antara 
+flavor/dessert dengan harga (price)*/
+.flavor, .dessert{
+    text-align: left;
+    width: 75%;
+}
+.price {
+    text-align: right;
+    width: 25%;
+}
+/*jika lebar harga (price) dan lebar rasa (flavor) 50%
+maka tag <p> akan tergeser ke bawah*/
+
+.item p{ /*berpengaruh kepada line dibawahnya saja*/
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/*jika line tag <p> ada di satu line director makan width bisa dibuat
+menjadi 50%*/
+h1, h2{
+    font-family: Impact,serif;
+}
+/*font-style untuk tahun pembangunan cafenya*/
+.established{
+    font-style: italic;
+}
+/*untuk h1 dan h2 dibawah untuk mengatur size tulisan*/
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 30px;
+}
+/*untuk mengatur jarak garis dengan konten di atas dan di bawah*/
+/*property dari border-width adalah 1px untuk semua ujungnya*/
+/*untuk total tinggi line(garis) adl 5px untuk atas bawah 1px*/
+hr{
+    background-color: brown;
+    border-color: brown;
+    height: 2px;
+}
+.bottom-line{
+    margin-top: 25px;
+}
+
+/*FOOTER*/
+
+footer{
+    font-size: 14px;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color:white;
+}
+a:acrive{
+    color:brown;
+}
+
+.address{
+    margin-bottom: 5px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
